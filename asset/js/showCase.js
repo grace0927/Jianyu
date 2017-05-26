@@ -80,6 +80,6 @@ var ShowCase = React.createClass({
 });
 
 ReactDOM.render(
-    <ShowCases url="api/showcase" />,
+    <ShowCases url="http://api.familyoffeng.us/showcase" />,
     document.getElementById('content')
 );
