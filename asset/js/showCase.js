@@ -3,7 +3,6 @@ var ShowCases = React.createClass({
         $.ajax({
             url: this.props.url,
             dataType: 'json',
-            cache: true,
             success: function(data) {
                 this.setState({data: data});
             }.bind(this),
