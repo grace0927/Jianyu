@@ -1,4 +1,4 @@
 {
 	"directory": "asset/bower_components/",
-	"timeout": 120000,
+	"timeout": 120000
 }
