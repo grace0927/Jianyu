@@ -5,7 +5,7 @@ FROM nginx
 MAINTAINER Jianyu Feng
 
 # copy file to serve
-ADD . /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
 # Expose ports
 EXPOSE 80
