@@ -1,2 +1,5 @@
-bower_components
-asset/bower_components
+*
+!bin
+!.gitignore
+!README.md
+!docker-composer.yml
