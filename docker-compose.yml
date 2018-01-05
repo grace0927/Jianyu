@@ -1,0 +1,22 @@
+# api version
+version: '2'
+
+services:
+  api:
+    build: ./api
+    container_name: api
+    environment:
+      - VIRTUAL_HOST=api.familyoffeng.us
+    image: api
+    network_mode: "bridge"
+    volumes:
+      - ./
+  jianyu:
+    build: ./JavaScriptPractice
+    container_name: jianyu
+    environment:
+        - VIRTUAL_HOST=jianyu.familyoffeng.us,familyoffeng.us
+    image: jianyu
+    network_mode: "bridge"
+    volumes:
+        - ./Jianyu:/usr/share/nginx/html

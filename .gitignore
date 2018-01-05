@@ -2,4 +2,4 @@
 !bin
 !.gitignore
 !README.md
-!docker-composer.yml
+!docker-compose.yml
