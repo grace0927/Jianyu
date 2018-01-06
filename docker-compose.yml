@@ -6,7 +6,7 @@ services:
     build: ./api
     container_name: api
     environment:
-      - VIRTUAL_HOST=api.familyoffeng.us
+      - VIRTUAL_HOST=api.${DOMAIN}
     image: api
     network_mode: "bridge"
     volumes:
@@ -15,7 +15,7 @@ services:
     build: ./JavaScriptPractice
     container_name: jianyu
     environment:
-        - VIRTUAL_HOST=jianyu.familyoffeng.us,familyoffeng.us
+        - VIRTUAL_HOST=jianyu.${DOMAIN},${DOMAIN}
     image: jianyu
     network_mode: "bridge"
     volumes:
